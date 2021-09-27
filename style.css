@@ -4,8 +4,10 @@
 
 body {
   background: rgb(255, 255, 255);
-  background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(101,101,101,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(124, 206, 113, 0.5) 100%
   );
   height: 100%;
   margin: 0;
@@ -16,7 +18,7 @@ body {
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #e4e4e4;
+  background-color: #eeeeee;
   padding: 20px 10px;
 }
 
@@ -56,11 +58,11 @@ body {
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .header a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
   .header-right {
     float: none;
@@ -70,31 +72,95 @@ body {
 #welcome {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: 25px;
 }
 
 h1 {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 30px;
 }
 
 p {
-  display: flex;
-  justify-content: center;
-  margin-left: 800px;
-  margin-right: 800px;
+  padding: 20px;
+}
+
+#bio-text {
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.52);
+  word-break: break-word;
+  width: min(70%, 600px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #thumbnails {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #thumbnails {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 img {
   width: 500px;
   margin: 20px;
-  box-shadow: 0px 0px 61px 1px rgba(0, 0, 0, 0.52);
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.52);
+  border-radius: 10px;
+  height: auto;
+  transition: 0.5s ease;
+}
+
+.img-wrap {
+  position: relative;
+  width: 500px;
+  margin: 20px;
+  height: auto;
+}
+.img-wrap-two {
+  position: relative;
+  width: 500px;
+  margin: 20px;
+  height: auto;
+}
+
+.img-wrap-three {
+  position: relative;
+  width: 500px;
+  margin: 20px;
+  height: auto;
+}
+#image-text-one {
+  display: flex;
+  justify-content: center;
+}
+
+#image-text-two {
+  display: flex;
+  justify-content: center;
+}
+
+#image-text-three {
+  display: flex;
+  justify-content: center;
+}
+
+.img-wrap:hover {
+  opacity: 0.7;
 }
 
 #project-links {
@@ -102,13 +168,46 @@ img {
   justify-content: center;
 }
 
+ul {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  list-style: inside;
+}
+
 li {
   display: flex;
   justify-content: center;
-  margin-left: 220px;
-  margin-right: 220px;
+  margin: 10px;
 }
 
-ul {
+hr {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+#hr-about {
+  width: 40%;
+  margin-bottom: 50px;
+}
+#hr-links {
+  width: 40%;
+  margin-bottom: 50px;
+}
+
+#link-block {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.52);
+  word-break: break-word;
+  width: min(70%, 600px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#link-list {
+  padding-right: 40px;
 }
