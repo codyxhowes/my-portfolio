@@ -1,14 +1,9 @@
 * {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Catamaran', sans-serif;
 }
 
 body {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 60%,
-    rgba(124, 206, 113, 0.5) 100%
-  );
+  background: rgb(75, 75, 75);
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
@@ -18,14 +13,14 @@ body {
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #eeeeee;
+  background-color: #2e2e2e;
   padding: 20px 10px;
 }
 
 /* Style the header links */
 .header a {
   float: left;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -38,6 +33,7 @@ body {
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
+  color: white;
 }
 
 /* Change the background color on mouse-over */
@@ -48,7 +44,7 @@ body {
 
 /* Style the active/current link*/
 .header a.active {
-  background-color: rgb(124, 206, 113);
+  background-color: rgb(0, 146, 114);
   color: white;
 }
 
@@ -80,21 +76,38 @@ h1 {
   display: flex;
   justify-content: center;
   margin: 30px;
+  color: white;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 p {
   padding: 20px;
+  color: white;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 #bio-text {
   align-items: center;
-  background: rgb(255, 255, 255);
+  background: rgb(26, 26, 26);
   border-radius: 10px;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.52);
   word-break: break-word;
   width: min(70%, 600px);
   margin-left: auto;
   margin-right: auto;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 #thumbnails {
@@ -123,6 +136,36 @@ img {
   border-radius: 10px;
   height: auto;
   transition: 0.5s ease;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 .img-wrap {
@@ -154,21 +197,45 @@ img {
 #image-text-one {
   display: flex;
   justify-content: center;
+  color: white;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 #image-text-two {
   display: flex;
   justify-content: center;
+  color: white;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 #image-text-three {
   display: flex;
   justify-content: center;
+  color: white;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 #image-text-four {
   display: flex;
   justify-content: center;
+  color: white;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 img:hover {
@@ -196,6 +263,11 @@ li {
 hr {
   width: 50%;
   margin-bottom: 50px;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 #hr-about {
@@ -211,17 +283,27 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(255, 255, 255);
+  background: rgb(26, 26, 26);
   border-radius: 10px;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.52);
   word-break: break-word;
   width: min(70%, 600px);
   margin-left: auto;
   margin-right: auto;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 #link-list {
   padding-right: 40px;
+  color: white;
+}
+
+a:link {
+ color: rgb(0, 146, 114);
 }
 
 #music-embed {
@@ -231,4 +313,9 @@ align-items: center;
 width: 60%;
 margin-left: auto;
 margin-right: auto;
+animation: fadeIn 2s;
+-webkit-animation: fadeIn 2s;
+-moz-animation: fadeIn 2s;
+-o-animation: fadeIn 2s;
+-ms-animation: fadeIn 2s;
 }
