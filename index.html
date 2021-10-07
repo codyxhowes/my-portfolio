@@ -12,22 +12,22 @@
     <title>My Portfolio</title>
 </head>
 <body>
-    <div id="navbar">
+    <nav id="navbar">
         <a href="#default" class="logo">Cody Howes</a>
         <div id="navbar-right">
-          <a class="active" href="index.html">Home</a>
-          <a href="AboutMe.html">About Me</a>
-          <a href="links.html">Links</a>
+          <a class="active" href="#welcome-section">Home</a>
+          <a href="#about-section">About Me</a>
+          <a href="#link-section">Links</a>
         </div>
-      </div>
+    </nav>
     <div id="welcome-section">
-          <p>Hello and welcome to my portfolio! Here you will find various projects I have been working on!</p>
+          <h2>Hello and welcome to my portfolio! Here you will find various projects I have been working on!</h2>
     </div>
     <div id="project-title">
-        <h1>Dev Projects</h1>
+        <h2>Dev Projects</h2>
         <hr>
     </div>
-    <div id="projects">
+    <section id="projects">
         <div class="project-tile">
         <a href="https://codyxhowes.github.io/rpg-name-gen/" target="_blank">
             <img src="rpggenedit.jpg" alt="rpg name gen">
@@ -51,16 +51,58 @@
             <img src="recipeedit.jpg" alt="recipe">
         </a>
             <div id="image-text-four">Simple Recipe List</div>
-            </div>
-    </div class="project-title">
-        <h1 id="music-title">Music Projects</h1>
-    </div>
+    </section>
+    <section>
+    <div class="project-title">
+        <h2 id="music-title">Music Projects</h2>
+        </div>
         <hr>
         <div id="welcome-section">
             <p>Some music projects I've recorded or played on.</p>
-    </div>
-        <div id="music-embed">
+            </div>
+            <div id="music-embed">
             <iframe src="https://open.spotify.com/embed/playlist/2KrEUHTn9RuwzQJIJb7a0k?theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </div>
+        </div>
+    </section>
+    <section id="about-section">
+        <h2>About Me</h2>
+          <hr id="hr-about">
+          <div id="bio-text">
+            <p>Hi, My name is Cody Howes. I am 27 years old, and I am from Monroe, La.
+            I have been working with web development for about 2 years now. 
+            At first I dabbled while trying to figure out what I wanted to do with my computer science degree. 
+            Once I figured out where I wanted to take career in computer science, I dove head first into web design. 
+            I learned Git, HTML, CSS, Bootstrap, and Javascript. 
+            I try to learn something about each language every day by working on my own projects, reading, or watching videos. Currently, I am expanding my knowledge of Javascript and plan to learn TypeScript, React, and Node.
+            </p>
+            <p>In my spare time, I love graphic design, and making various genres of music. I have been a dedicated musician since 2012. I have played in a few bands, and in 2017 I started producing two projects that have been successful endeavors.</p>
+            <p>My strengths are collaborating well with others, from my experience in bands and previous jobs I've held. I am good at finding creative solutions to problems. My main weakness is I can be too much of a perfectionist, and overly critical of myself.</p>
+          </div> 
+    </section>
+
+    <section id="link-section">
+        <h2>Links</h2>
+          <hr id="hr-links">
+        <div id="profile-link">
+            <ul id="link-list">
+                <li>
+                    <a href="https://www.linkedin.com/in/cody-howes-330036211/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/codyxhowes" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/codyxhowes/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCZnRh16Bv5QvXzIctmRNfPw" target="_blank">Youtube</a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/4S22RGe4mPsfGW5pymdwWw" target="_blank">Spotify</a>
+                </li>
+            </ul>
+            <p>Email: howes363@gmail.com</p>
+        </div>
+    </section>
 </body>
 </html>
