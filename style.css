@@ -59,13 +59,9 @@ body {
 
 
 #navbar a:hover {
-  background-color: #ddd;
+  background-color: rgb(0, 146, 114);
   color: black;
 }
-
-
-
-
 
 #navbar-right {
   float: right;
