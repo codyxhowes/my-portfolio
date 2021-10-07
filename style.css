@@ -26,6 +26,7 @@ body {
 }
 }
 #navbar {
+  z-index:1;
   overflow: hidden;
   background-color: #2e2e2e;
   padding: 20px 0;
@@ -184,27 +185,27 @@ img:hover {
 
 .project-tile {
   position: relative;
-  width: 500px;
+  
   margin: 20px;
   height: auto;
 }
 .project-tile-two {
   position: relative;
-  width: 500px;
+  
   margin: 20px;
   height: auto;
 }
 
 .project-tile-three {
   position: relative;
-  width: 500px;
+  
   margin: 20px;
   height: auto;
 }
 
 .project-tile-four {
   position: relative;
-  width: 500px;
+  
   margin: 20px;
   height: auto;
 }
